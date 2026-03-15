@@ -3,7 +3,7 @@
 
 
 int main() {
-    printf("Hola, este es mi trabajo practico\n");
+    printf("\nHola, este es mi trabajo practico\n\n");
     system("pause");
     return 0;
 }
