@@ -2,7 +2,9 @@
 
 #ifndef TP0_Repaso
 #define TP0_Repaso
-
+/*
+int sumarDosEnteros(int a,int b);
+*/
 // Ejercicio 1
 
 enum Referencia
