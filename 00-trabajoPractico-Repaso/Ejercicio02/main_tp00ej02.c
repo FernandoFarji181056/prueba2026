@@ -20,11 +20,14 @@ int main() {
     ingresoNumero[strcspn(ingresoNumero, "\n")] = 0;
     validar=validarEntero(ingresoNumero);
 
-    if (validar){printf("es un entero valido\n");}
+    if (validar){
+        printf("es un entero valido\n");
+        numero = strtol(ingresoNumero,NULL,10);    
+        }
     else{printf("NOO es un entero valido, intentelo nuevamente\n");}
     
     printf("Usted ingreso: %s\n",ingresoNumero);
-    numero = strtol(ingresoNumero,NULL,10);    
+        
     }while (!validar);
 
     validar=false;
@@ -46,13 +49,20 @@ int main() {
     digito = strtol(ingresoNumero,NULL,10);    
     }while (!validar);
     //validar=false;
+    printf("Usted ingreso el numero: %d\n\n",numero);
     printf("Usted ingreso el digito: %d\n\n",digito);
+    
 
        
     system("pause");
 
     bool esta = digitoEnNumero(numero , digito);
 
+    if(esta){
+        printf("si, esta\n");
+    }
+    else{printf("no esta\n");}
+    system("pause");
 
     return 0;
 }
