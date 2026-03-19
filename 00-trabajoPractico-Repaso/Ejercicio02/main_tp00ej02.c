@@ -45,12 +45,12 @@ int main() {
     if (validar){printf("es un entero valido\n");}
     else{printf("NOO es un entero valido, intentelo nuevamente\n");}
     
-    printf("Usted ingreso: %s\n",ingresoNumero);
+    //printf("Usted ingreso: %s\n",ingresoNumero);
     digito = strtol(ingresoNumero,NULL,10);    
     }while (!validar);
     //validar=false;
-    printf("Usted ingreso el numero: %d\n\n",numero);
-    printf("Usted ingreso el digito: %d\n\n",digito);
+    //printf("Usted ingreso el numero: %d\n\n",numero);
+    //printf("Usted ingreso el digito: %d\n\n",digito);
     
 
        
