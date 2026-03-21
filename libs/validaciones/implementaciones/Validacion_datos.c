@@ -74,8 +74,7 @@ bool validarEntero(char* cadena)
         //Valido que el input sea un NUMERO
         if (cadena[i] >= 48 && cadena[i] <=57)
         {
-            if (cadena[i] != ' ') esNumero = true;
-            else return false;
+            esNumero = true;
             
         }
         else return false;
