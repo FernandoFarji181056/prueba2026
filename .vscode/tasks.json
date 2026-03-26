@@ -12,7 +12,8 @@
 				"-I",
 				"Resolucion",
 				"${file}",
-				"Resolucion\\operaciones.c",
+				//"Resolucion\\operaciones.c",
+				"Resolucion.c",
 				"C:\\Estructura2026\\Repositorios\\prueba2026\\libs\\validaciones\\implementaciones\\Validacion_datos.c",
 				"-o",
 				"${fileDirname}\\${fileBasenameNoExtension}.exe"
