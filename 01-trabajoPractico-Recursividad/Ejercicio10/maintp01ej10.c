@@ -1,43 +1,79 @@
-#include <stdbool.h>
 #include <stdio.h>
-#include <stdlib.h>
+#include <stdlib.h> 
 #include <string.h>
+#include "../../libs/tp0repaso/headers/TP0_Repaso.h"
+#include "../../libs/recursividad/headers/TP_1_recursividad.h"
+
+#include "../../libs/validaciones/headers/Validacion_datos.h"
+
+//C:\Estructura2026\Repositorios\prueba2026\libs\tp0repaso\headers
 
 
+int main() {
 
+    char ingresoNumero[100];
+    int numero;
+    int bomba;
+    bool validar=false;
 
-// Ejercicio 1
-/*1.	Construir una función recursiva que retorne verdadero si una cadena de caracteres pasada 
-como parámetro es un palíndromo.  Ej. “neuquen” ya que se lee igual de atrás hacia adelante.*/
-int main (){
-    char ingresoPalindromo[1000];
-    bool validar=true;
+    do{
+    printf("ingrese un numero entero menor a 1000000: ");
+    fgets(ingresoNumero, 100, stdin);
+    ingresoNumero[strcspn(ingresoNumero, "\n")] = 0;
+    validar=validarEntero(ingresoNumero);
 
-   do{
-    validar=true;
-    printf("ingrese una palabra o una frase de no mas 999 digitos: ");
-    fgets(ingresoPalindromo, 1000, stdin);
-    ingresoPalindromo[strcspn(ingresoPalindromo, "\n")] = 0;
-    printf("usted ingreso: %s\n", ingresoPalindromo);
-    int longitud = strlen(ingresoPalindromo);
-    printf("cant caracteres: %d\n", longitud);
-    for(int i=0;i<longitud;i++){
-        //printf(" : %c\n", ingresoPalindromo[i]);
-                    if (ingresoPalindromo[i]>64&&ingresoPalindromo[i]<91 ||  ingresoPalindromo[i]>96&&ingresoPalindromo[i]<123 || ingresoPalindromo[i]== ' ' ||  ingresoPalindromo[i]>47&&ingresoPalindromo[i]<58){
-                    printf("correcto: \n");
-                }
-                    else {
-                        printf("INcorrecto: \n");
-                        validar=false;
-                    }
+    if (validar){
+        printf("es un entero valido\n");
+        numero = strtol(ingresoNumero,NULL,10);    
+        }
+    else{printf("NOO es un entero valido, intentelo nuevamente\n");}
+    
+    printf("Usted ingreso: %s\n",ingresoNumero);
+        
+    }while (!validar);
 
+    validar=false;
+    printf("Usted ingreso: %d\n\n",numero);
+    
+    fflush(stdout);
+    clearScreen();
+
+    do{
+    printf("ingrese bomba: ");
+    fgets(ingresoNumero, 100, stdin);
+    ingresoNumero[strcspn(ingresoNumero, "\n")] = 0;
+    validar=validarEntero(ingresoNumero);
+
+    if (validar){printf("es un entero valido\n");
+            bomba = strtol(ingresoNumero,NULL,10); 
+             }
+
+            else{
+                printf("NOO es un entero valido, intentelo nuevamente\n");
                 }
     
-       if (validar==false)("INGRESO INVALIDO, INTENTELO \n");
-       system("pause");
-    }while (!validar);
-  
-    system("pause");
-   
 
-   }
+      
+    }while (!validar);
+
+    
+
+    printf("el  numero es: %d\n",numero);
+    printf("la bomba es: %d\n",bomba);
+    printf("\n");
+
+    int* resultado = explosion(numero,bomba);
+
+    for (int i = 0; resultado[i] != -1; i++) {
+    printf("%d ", resultado[i]);
+
+        }
+    
+    
+
+
+    system("pause");
+
+
+    return 0;
+}
