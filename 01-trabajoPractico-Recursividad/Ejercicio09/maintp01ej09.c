@@ -66,14 +66,7 @@ int main() {
 
     printf("el  numero es: %d\n",numero);
   
-    printf("chau\n");
-
-
-    
-
-
     system("pause");
-
 
     return 0;
 }
