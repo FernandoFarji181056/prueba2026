@@ -19,7 +19,7 @@ int main() {
     bool validar=false;
 
     do{
-    printf("ingrese un numero entero mayor a 0 y menor a 100000: ");
+    printf("ingrese un numero entero mayor a 2 y menor a 100000: ");
     fgets(ingresoNumero, 100, stdin);
     ingresoNumero[strcspn(ingresoNumero, "\n")] = 0;
     validar=validarEntero(ingresoNumero);
@@ -28,7 +28,7 @@ int main() {
 
         numero = strtol(ingresoNumero,NULL,10);
 
-        if (numero <1 || numero > 99999){
+        if (numero <3 || numero > 99999){
         printf("el numero esta fuera del rango permitido\n");
         printf("intentelo nuevamente\n");
         validar=false;
