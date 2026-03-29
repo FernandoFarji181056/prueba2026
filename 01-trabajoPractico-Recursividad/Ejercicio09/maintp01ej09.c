@@ -49,7 +49,16 @@ int main() {
     //fflush(stdout);
     clearScreen();
 
-    divisiblePor7(numero);
+   
+
+    if(divisiblePor7(numero)){
+        printf("el numero es divisible por 7\n");
+        
+
+        }
+        else{
+            printf("el numero NO es divisible por 7\n");
+    }
 
     
 
