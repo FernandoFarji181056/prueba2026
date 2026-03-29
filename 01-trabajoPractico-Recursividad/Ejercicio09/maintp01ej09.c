@@ -18,7 +18,7 @@ int main() {
     bool validar=false;
 
     do{
-    printf("DIVISIBLE POR 7");
+    printf("DIVISIBLE POR 7\n");
     printf("ingrese un numero entero mayor a -1000000 y menor a 1000000: ");
     fgets(ingresoNumero, 100, stdin);
     ingresoNumero[strcspn(ingresoNumero, "\n")] = 0;
@@ -49,7 +49,9 @@ int main() {
     //fflush(stdout);
     clearScreen();
 
-   
+   if (numero<0){
+    numero=-numero;
+   }
 
     if(divisiblePor7(numero)){
         printf("el numero es divisible por 7\n");
