@@ -35,9 +35,8 @@ bool divisiblePor7(int n){
             }
             else{
             n=(n/10)-(2*(n%10));
-            printf("\nahora el numero es: %d\n",n);
-            
-            divisiblePor7(n);
+            //printf("\nahora el numero es: %d\n",n);
+            return divisiblePor7(n);
 
             }
 
