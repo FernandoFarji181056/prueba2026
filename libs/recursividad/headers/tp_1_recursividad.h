@@ -1,5 +1,4 @@
 #include <stdbool.h>
-//este archivo se encuentra localmente en C:\Estructura2026\Repositorios\prueba2026\libs\recursividad\headers
 
 #ifndef TP1_Recursividad
 #define TP1_Recursividad
@@ -125,8 +124,6 @@ explosion(10, 3) => [3 2 1 1 3]
 Número: 20 
 Bomba: 5 
 explosion(20, 5) => [4 3 2 2 1 1 1 1 5]
-
-NOTA: Se utilizará el valor -1 como entero que indica el final del arreglo devuelto por la función.
 */
 
 int* explosion (int n, int b);
