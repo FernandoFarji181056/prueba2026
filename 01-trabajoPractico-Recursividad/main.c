@@ -116,7 +116,7 @@ void main(){
             printf("Elegiste la opcion 10\n");
             printf("Presiona ENTER para ir al ejercicio elegido\n");
             system("pause");
-            //ejecutar_TP1_EJ10();
+            ejecutar_TP1_EJ10();
             system("pause");
             break;
 

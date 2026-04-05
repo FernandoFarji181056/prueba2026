@@ -13,7 +13,9 @@
 				"resolucionEj09",
 				"${file}",
 				"resolucionEj09.c",
+				"resolucionEj10.c",
 				"ej09.c",
+				"ej10.c",
 				"C:\\Estructura2026\\Repositorios\\prueba2026\\libs\\validaciones\\implementaciones\\Validacion_datos.c",
 				"-o",
 				"${fileDirname}\\${fileBasenameNoExtension}.exe"

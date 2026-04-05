@@ -2,15 +2,16 @@
 #include <stdlib.h> 
 #include <string.h>
 #include <limits.h>
-#include "../../libs/tp0repaso/headers/TP0_Repaso.h"
-#include "../../libs/recursividad/headers/TP_1_recursividad.h"
+//#include "../../libs/tp0repaso/headers/TP0_Repaso.h"
+//#include "../../libs/recursividad/headers/TP_1_recursividad.h"
+#include "TP_1_recursividad.h"
 
-#include "../../libs/validaciones/headers/Validacion_datos.h"
+#include "../libs/validaciones/headers/Validacion_datos.h"
 
 //C:\Estructura2026\Repositorios\prueba2026\libs\tp0repaso\headers
 //-2.147.483.648
 // 2.147.483.647
-int main() {
+void ejecutar_TP1_EJ10()  {
 
 
     char ingresoNumero[100];
@@ -96,5 +97,5 @@ int main() {
     system("pause");
 
 
-    return 0;
+    //return 0;
 }
