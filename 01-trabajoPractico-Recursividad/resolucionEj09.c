@@ -28,6 +28,7 @@ divisiblePor7 (110) => falso
 */
 
 bool divisiblePor7(int n){
+        
         // CASO BASE: si n no es mayor que b
         if (n < 70) {
             if (n%7==0){return true;}

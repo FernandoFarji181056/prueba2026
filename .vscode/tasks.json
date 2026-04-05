@@ -10,10 +10,10 @@
 				"-g",
 				"-I", "libs/validaciones/headers",
 				"-I",
-				"Resolucion",
+				"resolucionEj09",
 				"${file}",
-				//"Resolucion\\operaciones.c",
-				"Resolucion.c",
+				"resolucionEj09.c",
+				"ej09.c",
 				"C:\\Estructura2026\\Repositorios\\prueba2026\\libs\\validaciones\\implementaciones\\Validacion_datos.c",
 				"-o",
 				"${fileDirname}\\${fileBasenameNoExtension}.exe"
