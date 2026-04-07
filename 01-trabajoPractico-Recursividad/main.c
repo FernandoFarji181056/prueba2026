@@ -70,14 +70,14 @@ void main(){
             printf("Elegiste la opcion 4\n");
             printf("Presiona ENTER para ir al ejercicio elegido\n");
             system("pause");
-            //ejecutar_TP1_EJ04();
+            ejecutar_TP1_EJ04();
             system("pause");
             break;
         case 5:
             printf("Elegiste la opcion 5\n");
             printf("Presiona ENTER para ir al ejercicio elegido\n");
             system("pause");
-            //ejecutar_TP1_EJ05();
+            ejecutar_TP1_EJ05();
             system("pause");
             break;
         case 6:
