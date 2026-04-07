@@ -49,21 +49,21 @@ void main(){
             printf("Elegiste la opcion 1\n");
             printf("Presiona ENTER para ir al ejercicio elegido\n");
             system("pause");
-            //ejecutar_TP1_EJ02();
+            ejecutar_TP1_EJ02();
             system("pause");
             break;
         case 2:
             printf("Elegiste la opcion 2\n");
             printf("Presiona ENTER para ir al ejercicio elegido\n");
             system("pause");
-            //ejecutar_TP1_EJ02();
+            ejecutar_TP1_EJ02();
             system("pause");
             break;
         case 3:
             printf("Elegiste la opcion 3\n");
             printf("Presiona ENTER para ir al ejercicio elegido\n");
             system("pause");
-            //ejecutar_TP1_EJ03();
+            ejecutar_TP1_EJ03();
             system("pause");
             break;
         case 4:
@@ -92,7 +92,7 @@ void main(){
             printf("Elegiste la opcion 7\n");
             printf("Presiona ENTER para ir al ejercicio elegido\n");
             system("pause");
-            //ejecutar_TP1_EJ07();
+            ejecutar_TP1_EJ07();
             system("pause");
             break;
 
