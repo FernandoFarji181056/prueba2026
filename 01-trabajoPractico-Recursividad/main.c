@@ -49,7 +49,7 @@ void main(){
             printf("Elegiste la opcion 1\n");
             printf("Presiona ENTER para ir al ejercicio elegido\n");
             system("pause");
-            ejecutar_TP1_EJ02();
+            ejecutar_TP1_EJ01();
             system("pause");
             break;
         case 2:
