@@ -3,10 +3,9 @@
 #include <string.h>
 #include <stdbool.h>
 #include <ctype.h>
-//#include "libs/validaciones/headers/Validacion_datos.h"
 #include "../libs/validaciones/headers/Validacion_datos.h"
-//#include "libs/tipoElemento/headers/tipo_elemento.h"
 #include "main.h"
+#include"tp_1_recursividad.h"
 
 
 
@@ -134,3 +133,4 @@ void main(){
     printf("Saliendo de TP1\n");
     system("pause");
 }
+
